@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body onload="coronacont()">
+<link rel="stylesheet" href="coronastyle.css">
+<script type="text/javascript" src="script.js"></script>
+	<!-- The video -->
+	<h1 align="center">CORONA</h1>
+
+	<div id="ember1427">
+		<p>Muertos por coronavirus</p>
+		<script language="JavaScript">
+			function coronacont(){
+    		momentoActual = new Date()
+    		hora = momentoActual.getHours()+200000
+    		minuto = momentoActual.getMinutes()+3000
+    		segundo = momentoActual.getSeconds()+1000
+
+    		horaImprimible = hora + minuto + segundo
+
+    		document.coronaform.coronadead.value = horaImprimible
+
+    		setTimeout("coronacont()",1000)
+			}
+		</script>
+		<form name="coronaform">
+			<input type="text" name="coronadead" size="10">
+		</form>
+	</div>
+
+	<div class="menu"> menu
+		<div id="hovermenu">
+			<p class="titulomenu">Menu</p>
+				<p><a class="linkmenu" href="../Marco/Marco.html">    Futurista</a></p>
+				</br>
+				<p><a class="linkmenu" href="../Tunel/Tunel.html">    Tunel</a></p>
+				</br>
+				<p><a class="linkmenu" href="../Retro/Retro.html">    Retro</a></p>
+		</div>
+	</div>
+	<video autoplay muted loop id="fondo">
+  		<source src="loopcorona.mp4" type="video/mp4">
+	</video>
+</div>
+</body>
+</html>

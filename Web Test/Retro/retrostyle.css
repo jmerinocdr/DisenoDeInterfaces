@@ -1,0 +1,78 @@
+html{
+	background-color: black;
+}
+html, body{
+	height: 100%;
+	overflow: hidden;
+	
+}
+h1{
+	color: #00FFF0;
+	font-family: Comic Sans MS;
+	font-size: 150px;
+	transition: font-size 2s;
+	text-shadow: 10px 10px 15px #7DFFF7;
+}
+h1:hover{
+	font-size: 200px;
+}
+a{
+	margin-left: 30px;
+	text-decoration:none;
+	font-family: Comic Sans MS;
+	font-size: 30px;
+}
+.titulomenu{
+	text-decoration:none;
+	color: #00FFF0;
+	font-family: Comic Sans MS;
+	font-size: 50px;
+}
+.menu{
+	position: absolute;
+	display: block;
+	/*background-color: blue;*/
+	height: 100%;
+	width: 10%;
+	top: 0px;
+	left: 0px;
+}
+
+.menu:hover #hovermenu{
+	display: block;
+	left: 0px;
+	transition: left 2s;
+}
+.menu #hovermenu{
+	display: none;
+	align-content: right;
+	background-color: #4E2175;
+	position: absolute;
+	top: 0px;
+	left: 1000px;
+	height: 100%;
+	width: 150%;
+	opacity: 0.8;
+}
+
+#fondo {
+ position: absolute;
+ bottom: 0px;
+ right: 0px;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -1000;
+ overflow: hidden;
+ }
+ #video_pattern {
+ background:#fff;
+ position: fixed;
+ opacity: 0.8;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 1;
+ }
